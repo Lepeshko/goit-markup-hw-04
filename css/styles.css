@@ -477,6 +477,7 @@ header {
 .container-footer {
    /* padding-top: 101.5px; */
    display: flex;
+   стиль align-items: baseline;
 }
 
 .footer {
@@ -532,13 +533,13 @@ header {
    font-style: normal;
    font-weight: 500;
    line-height: 1.5;
-   letter-spacing: 0.02;
+   letter-spacing: 0.02em;
    margin-bottom: 16px;
 }
 
 .main-team-soc-list {
    display: flex;
-   gap: 24px;
+   gap: 16px;
    justify-content: center;
    align-items: center;
    fill: #f4f4fd;
@@ -559,11 +560,11 @@ header {
 }
 
 .footer-soc-link:hover {
-   background-color: #404bbf;
+   background-color: #31d0aa;
 }
 
 .footer-soc-link:focus {
-   background-color: #404bbf;
+   background-color: #31d0aa;
 }
 
 .footer-soc-svg {
