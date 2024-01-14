@@ -391,6 +391,7 @@ header {
    border-radius: 50%;
    background-color: #4D5AE5;
    display: flex;
+   gap: 24px;
    justify-content: center;
    align-items: center;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -477,7 +478,7 @@ header {
 .container-footer {
    /* padding-top: 101.5px; */
    display: flex;
-   стиль align-items: baseline;
+   align-items: baseline;
 }
 
 .footer {
