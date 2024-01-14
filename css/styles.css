@@ -20,6 +20,11 @@ body {
 
 a {
    text-decoration: none;
+   margin: 0;
+   padding: 0;
+   color: inherit;
+   tab-size: 0;
+   line-height: 0;
 }
 
 ul {
@@ -177,17 +182,6 @@ header {
 /** ------------------ 1st HERO ------------------ */
 
 
-/* Для секції в класі заданий стиль background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-url(../images/img-name.jpeg);
-або background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-url(../images/img-name.jpg);
-для реалізації фонового зображення з затемненням (багатошаровий фон з градієнтом) Для секції в класі доданий стиль max-width: 1440px;
-для визначення ширини секції Для секції в класі заданий стиль background-repeat: no-repeat;
-для уникнення повторення фонового зображення відносно його власної ширини та висоти Для секції в класі заданий стиль background-position: center;
-для вирівнювання фонового зображення відносно його власної ширини та висоти Для секції в класі заданий стиль background-size: cover;
-для позиціонування зображення на всю площу фону елемента */
-
-
 /*? .main {} */
 
 .main-hero {
@@ -199,9 +193,11 @@ url(../images/img-name.jpg);
    background-size: cover;
    max-width: 1440px;
    background-position: center;
+   margin: 0 auto;
 }
 
-/*? .container-hero{} */
+.container-hero {}
+
 
 .main-hero-heading {
    color: #FFF;
@@ -279,9 +275,6 @@ url(../images/img-name.jpg);
    width: calc((100% - 24px * 3) / 4);
 }
 
-
-
-
 .main-skils-subtitle {
    color: #2E2F42;
    font-family: Roboto;
@@ -309,6 +302,12 @@ url(../images/img-name.jpg);
    border-radius: 4px;
    border: 1px solid #8E8F99;
    background: #F4F4FD;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin-bottom: 8px;
 }
 
 /** ------------------ 3th OUR TEAM ------------------ */
@@ -353,8 +352,6 @@ url(../images/img-name.jpg);
    padding: 32px 16px;
 }
 
-
-
 .main-team-subtitle {
    color: #2E2F42;
    text-align: center;
@@ -379,7 +376,18 @@ url(../images/img-name.jpg);
 .main-team-soc-list {
    display: flex;
    gap: 24px;
-   justify-items: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-team-soc-item {
+   width: 40px;
+   height: 40px;
+   flex-shrink: 0;
+   border-radius: 50%;
+   background-color: #4D5AE5;
+   display: flex;
+   justify-content: center;
    align-items: center;
 }
 
