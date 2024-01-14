@@ -176,11 +176,21 @@ header {
 
 /** ------------------ 1st HERO ------------------ */
 
+
+/* Для секції в класі заданий стиль background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+url(../images/img-name.jpeg);
+або background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+url(../images/img-name.jpg);
+для реалізації фонового зображення з затемненням (багатошаровий фон з градієнтом) Для секції в класі доданий стиль max-width: 1440px;
+для визначення ширини секції Для секції в класі заданий стиль background-repeat: no-repeat;
+для уникнення повторення фонового зображення відносно його власної ширини та висоти Для секції в класі заданий стиль background-position: center;
+для вирівнювання фонового зображення відносно його власної ширини та висоти Для секції в класі заданий стиль background-size: cover;
+для позиціонування зображення на всю площу фону елемента */
+
+
 /*? .main {} */
 
-/*? .main-hero {}  */
-
-.container-hero {
+.main-hero {
    /* background: #2E2F42; */
    padding: 188px 0;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
@@ -190,6 +200,8 @@ header {
    max-width: 1440px;
    background-position: center;
 }
+
+/*? .container-hero{} */
 
 .main-hero-heading {
    color: #FFF;
