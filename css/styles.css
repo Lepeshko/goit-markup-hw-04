@@ -567,14 +567,6 @@ header {
    margin-bottom: 16px;
 }
 
-.main-team-soc-list {
-   display: flex;
-   gap: 16px;
-   justify-content: center;
-   align-items: center;
-   fill: #f4f4fd;
-}
-
 .footer-soc-item {}
 
 .footer-soc-link {
