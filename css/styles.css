@@ -122,29 +122,15 @@ header {
 .header-menu-list {
    display: flex;
    gap: 40px;
-   /* padding: 24px 0; */
-}
-
-.header-menu-item {
-   padding: 24px 0;
-}
-
-.header-menu-item-first {
-   position: relative;
    color: #404bbf;
+   /* padding: 24px 0; */
+   position: relative;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu-item-first::after {
-   content: '';
-   position: absolute;
-   left: 0;
-   bottom: -1px;
-   height: 4px;
-   background-color: #404bbf;
-   border-radius: 2px;
-}
+.header-menu-item {}
 
+/* -----------nav-link----------- */
 .header-menu-link {
    color: #2E2F42;
    font-size: 16px;
@@ -152,7 +138,30 @@ header {
    line-height: 1.5;
    letter-spacing: 0.02em;
    padding: 24px 0;
+   display: block;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ---------current---------- */
+
+.header-menu-item-line {
+   position: relative;
+   color: #404BBF;
+}
+
+.header-menu-item-line::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -1px;
+   background-color: #404bbf;
+   border-radius: 2px;
+   height: 4px;
+   width: 100%;
+}
+
+/* ---------------- */
+
 
 .header-menu-link:hover {
    color: #404bbf;
@@ -184,6 +193,7 @@ header {
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover {
